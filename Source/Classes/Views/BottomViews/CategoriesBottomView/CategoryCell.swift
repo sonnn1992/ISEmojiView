@@ -74,7 +74,7 @@ internal class CategoryCell: UICollectionViewCell {
     internal func setEmojiCategory(_ category: Category) {
         let image: UIImage?
         
-        if let imagePath = Bundle.podBundle.path(forResource: category.iconName, ofType: "png", inDirectory: "Images") {
+        if let imagePath = Bundle.emojiBundle.path(forResource: category.iconName, ofType: "png", inDirectory: "Images") {
             image = UIImage(contentsOfFile: imagePath)
         } else {
             image = UIImage(named: category.iconName)

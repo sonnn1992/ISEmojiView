@@ -29,7 +29,7 @@ final internal class PageControlBottomView: UIView {
     static func loadFromNib(categoriesCount: Int) -> PageControlBottomView {
         let nibName = String(describing: PageControlBottomView.self)
         
-        guard let nib = Bundle.podBundle.loadNibNamed(nibName, owner: nil, options: nil) as? [PageControlBottomView] else {
+        guard let nib = Bundle.emojiBundle.loadNibNamed(nibName, owner: nil, options: nil) as? [PageControlBottomView] else {
             fatalError()
         }
         
