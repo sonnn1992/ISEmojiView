@@ -48,7 +48,7 @@ final internal class CategoriesBottomView: UIView {
     @IBOutlet private weak var changeKeyboardButton: UIButton!
     @IBOutlet private weak var deleteButton: UIButton! {
         didSet {
-            if let imagePath = Bundle.emojiBundle.path(forResource: "ic_emojiDelete", ofType: "png", inDirectory: "Images") {
+            if let imagePath = Bundle.podBundle.path(forResource: "ic_emojiDelete", ofType: "png", inDirectory: "Images") {
                 deleteButton.setImage(UIImage(contentsOfFile: imagePath), for: .normal)
             }
         }
@@ -67,7 +67,7 @@ final internal class CategoriesBottomView: UIView {
     static internal func loadFromNib(with categories: [Category], needToShowAbcButton: Bool) -> CategoriesBottomView {
         let nibName = String(describing: CategoriesBottomView.self)
         
-        guard let nib = Bundle.emojiBundle.loadNibNamed(nibName, owner: nil, options: nil) as? [CategoriesBottomView] else {
+        guard let nib = Bundle.podBundle.loadNibNamed(nibName, owner: nil, options: nil) as? [CategoriesBottomView] else {
             fatalError()
         }
         
