@@ -10,7 +10,7 @@ import Foundation
 extension Bundle {
     
     class var podBundle: Bundle {
-        let podBundle = Bundle(for: EmojiView.classForCoder())
+        let podBundle = Bundle(for: EmojiView.self)
         
         guard let bundleURL = podBundle.url(forResource: "ISEmojiView", withExtension: "bundle") else {
             fatalError("Could not create a path to the bundle")
