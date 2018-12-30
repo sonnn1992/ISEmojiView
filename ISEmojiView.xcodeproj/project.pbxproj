@@ -23,9 +23,6 @@
 		0D3A9A972115E36100279297 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A9A622115E36100279297 /* Constants.swift */; };
 		0D3A9A982115E36100279297 /* RecentEmojisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A9A632115E36100279297 /* RecentEmojisManager.swift */; };
 		0D3A9A992115E36100279297 /* EmojiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A9A642115E36100279297 /* EmojiLoader.swift */; };
-		0D3A9A9A2115E36100279297 /* PageControlBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A672115E36100279297 /* PageControlBottomView.xib */; };
-		0D3A9A9B2115E36100279297 /* EmojiCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A682115E36100279297 /* EmojiCollectionView.xib */; };
-		0D3A9A9C2115E36100279297 /* CategoriesBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A692115E36100279297 /* CategoriesBottomView.xib */; };
 		0D3A9A9D2115E36200279297 /* ic_emojiDelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A6B2115E36100279297 /* ic_emojiDelete@3x.png */; };
 		0D3A9A9E2115E36200279297 /* ic_flags.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A6C2115E36100279297 /* ic_flags.png */; };
 		0D3A9A9F2115E36200279297 /* ic_activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9A6D2115E36100279297 /* ic_activity.png */; };
@@ -360,10 +357,11 @@
 		0B834BAE1DD5CE12003F5D79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					0B834BB61DD5CE12003F5D79 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -404,7 +402,6 @@
 				0D3A9ABC2115E36200279297 /* ISEmojiList_iOS10.plist in Resources */,
 				0D3A9AA02115E36200279297 /* ic_travel_places.png in Resources */,
 				0D3A9AB32115E36200279297 /* ic_symbols@2x.png in Resources */,
-				0D3A9A9A2115E36100279297 /* PageControlBottomView.xib in Resources */,
 				0D3A9AAA2115E36200279297 /* ic_food_drink.png in Resources */,
 				0D3A9A9D2115E36200279297 /* ic_emojiDelete@3x.png in Resources */,
 				0D3A9AA92115E36200279297 /* ic_emojiDelete.png in Resources */,
@@ -415,8 +412,6 @@
 				0D3A9AAC2115E36200279297 /* ic_smileys_people@3x.png in Resources */,
 				0D3A9A9E2115E36200279297 /* ic_flags.png in Resources */,
 				0D3A9ABA2115E36200279297 /* ic_activity@3x.png in Resources */,
-				0D3A9A9C2115E36100279297 /* CategoriesBottomView.xib in Resources */,
-				0D3A9A9B2115E36100279297 /* EmojiCollectionView.xib in Resources */,
 				0D3A9AB62115E36200279297 /* ic_travel_places@3x.png in Resources */,
 				0D3A9AB72115E36200279297 /* ic_animals_nature@2x.png in Resources */,
 				0D3A9AB02115E36200279297 /* ic_recents@3x.png in Resources */,
@@ -465,15 +460,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -519,15 +522,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -572,7 +583,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.isaced.ISEmojiView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -591,7 +602,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.isaced.ISEmojiView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
