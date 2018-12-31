@@ -10,16 +10,17 @@ import Foundation
 extension Bundle {
     
     class var podBundle: Bundle {
-        let podBundle = Bundle.main//Bundle(for: EmojiView.self)
+        let podBundle = Bundle(for: EmojiView.self)
+        return podBundle
         
-        guard let bundleURL = podBundle.url(forResource: "ISEmojiView", withExtension: "bundle") else {
-            fatalError("Could not create a path to the bundle")
-        }
-        
-        guard let bundle = Bundle(url: bundleURL) else {
-            fatalError("Could not load the bundle")
-        }
-        
-        return bundle
+//        guard let bundleURL = podBundle.url(forResource: "ISEmojiView", withExtension: "bundle") else {
+//            fatalError("Could not create a path to the bundle")
+//        }
+//        
+//        guard let bundle = Bundle(url: bundleURL) else {
+//            fatalError("Could not load the bundle")
+//        }
+//        
+//        return bundle
     }
 }
