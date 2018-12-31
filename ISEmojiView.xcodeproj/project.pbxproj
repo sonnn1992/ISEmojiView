@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0288C59721D9F0A300415488 /* EmojiCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0288C59421D9F0A300415488 /* EmojiCollectionView.xib */; };
+		0288C59821D9F0A300415488 /* PageControlBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0288C59521D9F0A300415488 /* PageControlBottomView.xib */; };
+		0288C59921D9F0A300415488 /* CategoriesBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0288C59621D9F0A300415488 /* CategoriesBottomView.xib */; };
 		0B834BBC1DD5CE12003F5D79 /* ISEmojiView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B834BBA1DD5CE12003F5D79 /* ISEmojiView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D3A9A8B2115E36100279297 /* EmojiCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A9A4D2115E36100279297 /* EmojiCategory.swift */; };
 		0D3A9A8C2115E36100279297 /* KeyboardSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A9A4E2115E36100279297 /* KeyboardSettings.swift */; };
@@ -58,6 +61,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0288C59421D9F0A300415488 /* EmojiCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiCollectionView.xib; sourceTree = "<group>"; };
+		0288C59521D9F0A300415488 /* PageControlBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageControlBottomView.xib; sourceTree = "<group>"; };
+		0288C59621D9F0A300415488 /* CategoriesBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesBottomView.xib; sourceTree = "<group>"; };
 		0B834BB71DD5CE12003F5D79 /* ISEmojiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISEmojiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B834BBA1DD5CE12003F5D79 /* ISEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISEmojiView.h; sourceTree = "<group>"; };
 		0B834BBB1DD5CE12003F5D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,9 +82,6 @@
 		0D3A9A622115E36100279297 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0D3A9A632115E36100279297 /* RecentEmojisManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentEmojisManager.swift; sourceTree = "<group>"; };
 		0D3A9A642115E36100279297 /* EmojiLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiLoader.swift; sourceTree = "<group>"; };
-		0D3A9A672115E36100279297 /* PageControlBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageControlBottomView.xib; sourceTree = "<group>"; };
-		0D3A9A682115E36100279297 /* EmojiCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiCollectionView.xib; sourceTree = "<group>"; };
-		0D3A9A692115E36100279297 /* CategoriesBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesBottomView.xib; sourceTree = "<group>"; };
 		0D3A9A6B2115E36100279297 /* ic_emojiDelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_emojiDelete@3x.png"; sourceTree = "<group>"; };
 		0D3A9A6C2115E36100279297 /* ic_flags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_flags.png; sourceTree = "<group>"; };
 		0D3A9A6D2115E36100279297 /* ic_activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_activity.png; sourceTree = "<group>"; };
@@ -264,22 +267,14 @@
 		0D3A9A652115E36100279297 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0D3A9A662115E36100279297 /* Xibs */,
+				0288C59621D9F0A300415488 /* CategoriesBottomView.xib */,
+				0288C59421D9F0A300415488 /* EmojiCollectionView.xib */,
+				0288C59521D9F0A300415488 /* PageControlBottomView.xib */,
 				0D3A9A6A2115E36100279297 /* Images */,
 				0D3A9A892115E36100279297 /* ISEmojiList.plist */,
 				0D3A9A8A2115E36100279297 /* ISEmojiList_iOS10.plist */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		0D3A9A662115E36100279297 /* Xibs */ = {
-			isa = PBXGroup;
-			children = (
-				0D3A9A672115E36100279297 /* PageControlBottomView.xib */,
-				0D3A9A682115E36100279297 /* EmojiCollectionView.xib */,
-				0D3A9A692115E36100279297 /* CategoriesBottomView.xib */,
-			);
-			path = Xibs;
 			sourceTree = "<group>";
 		};
 		0D3A9A6A2115E36100279297 /* Images */ = {
@@ -388,12 +383,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0288C59921D9F0A300415488 /* CategoriesBottomView.xib in Resources */,
 				0D3A9AAB2115E36200279297 /* ic_food_drink@3x.png in Resources */,
 				0D3A9ABB2115E36200279297 /* ISEmojiList.plist in Resources */,
 				0D3A9AA72115E36200279297 /* ic_recents.png in Resources */,
 				0D3A9AA22115E36200279297 /* ic_objects.png in Resources */,
 				0D3A9AA62115E36200279297 /* ic_animals_nature.png in Resources */,
 				0D3A9AB92115E36200279297 /* ic_travel_places@2x.png in Resources */,
+				0288C59821D9F0A300415488 /* PageControlBottomView.xib in Resources */,
 				0D3A9AAF2115E36200279297 /* ic_flags@2x.png in Resources */,
 				0D3A9AA52115E36200279297 /* ic_smileys_people.png in Resources */,
 				0D3A9AB22115E36200279297 /* ic_flags@3x.png in Resources */,
@@ -412,6 +409,7 @@
 				0D3A9AAC2115E36200279297 /* ic_smileys_people@3x.png in Resources */,
 				0D3A9A9E2115E36200279297 /* ic_flags.png in Resources */,
 				0D3A9ABA2115E36200279297 /* ic_activity@3x.png in Resources */,
+				0288C59721D9F0A300415488 /* EmojiCollectionView.xib in Resources */,
 				0D3A9AB62115E36200279297 /* ic_travel_places@3x.png in Resources */,
 				0D3A9AB72115E36200279297 /* ic_animals_nature@2x.png in Resources */,
 				0D3A9AB02115E36200279297 /* ic_recents@3x.png in Resources */,
